@@ -2,7 +2,7 @@
 
 Semantic clustering of text using K-means on custom-built contextual Word Co-occurence matrix, decomposed using SVD. Truncated length of word vectors are estimated by plotting explained variance of decomposed matrix.
 
-# Clustering on TruncatedSVDWord Occurence Matrix (Part I) #
+# Clustering on Truncated SVD Word Occurence Matrix (Part I) #
 
 ## Amazon Fine Food Review Dataset ##
 
@@ -38,7 +38,7 @@ The code below would **clean the review text from html tags and punctuations and
 3. final.sqlite db is to be **used for further processing** such as Text to Vector operations.
 4. The preprocessing step is one time effort but the training & visualization steps require multiple runs. Hence, it is prudent to make reprocessing step independant, to avoid multiple runs.
 
-# Clustering on TruncatedSVDWord Occurence Matrix (Part II) #
+# Clustering on Truncated SVD Word Occurence Matrix (Part II) #
 
 ## Data Source: ##
 
@@ -70,7 +70,7 @@ To **find clusters of semantically related words** from Amazon reviews using con
 
 ## Custom Defined Functions ##
 
-2 user defined functions are written to
+3 user defined functions are written to
 
 1. Elbow Method to find K
 
@@ -114,7 +114,7 @@ To **find clusters of semantically related words** from Amazon reviews using con
 
 1. There are clusters where semantic relation could be noticed. For instance, **words hypoglecemia and hysterectomi are grouped together (both are medical words)**.
 
-2. The words grouped together with word, **’alkalin’ in cluster 16** are nonalcohol, stimuli, vitamin, needl, lecithin, technivorm, latent, microbiolog, benzocain, sunburn etc. Thus **16th cluster contains chemcial and medicine related words**.
+2. The words grouped together with word, **’alkalin’ in cluster 16** are nonalcohol, stimuli, vitamin, needl, lecithin, technivorm, latent, microbiolog, benzocain, sunburn etc. Thus **16th cluster contains chemical and medicine related words**.
 
 3. The words meaningfully similar to **’food’** in cluster 15 are irregular, wholefood, brunch, bitterish, grind, robusto, dogfoodanalyst, dinner, cocunut etc. Thus **15th cluster contains food and food related words in general**.
 
